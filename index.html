@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta lang="en">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" type="images/x-icon" href="images/infi_favicon.jpg">
+    <title>Infinity Math Course</title>
+    <meta name="author" content="Ma Cat Huynh">
+    <meta name="description" content="personal project">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <nav>
+            <a href="aboutAuthor.html">
+                <img src="images/infi_icon.png" class="logo" alt="Infinity logo" title="about the author of this page">
+            </a>
+            <ul>
+                <li><a href="index.html" title="Infinity Math course">COURSE</a></li>
+                <li><a href="#" title="Already have an account?" id="logInBtn">LOG IN</a></li>
+                <li><a href="#contact">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1><b id="courseName">INFINITY MATH</b></h1>
+
+    <div class="courseDescription">
+        <ul>
+        </ul>
+        <div id="conclusion">THEN OUR <b id="mini-courseName">INFINITY MATH</b> COURSE IS FOR YOU !!!</div>
+    </div>
+    <div id="logInForm">
+        <form>
+            <span class="close" title="Close">x</span>
+            <h2>LOGIN</h2>
+            <label for="logInUsername">Username</label>
+            <input type="text" name="logInUsername" placeholder="Enter username">
+            <label for="logInPsw">Password</label>
+            <input type="password" placeholder="Enter password">
+            <label for="remember"></label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+            <br>
+            <a href="#">Forgot password?</a>
+            <button type="submit" name="submit">SUBMIT</button>
+        </form>
+    </div>
+
+    <h2 class="hidden">WHAT YOU'LL GET</h2>
+
+    <ul class="courseContent">
+        <li class="hidden">
+            Study at your own pace through <br><b>over 300 hours</b> of high quality video lectures
+            <img src="images/video_lecture.jpg">
+        </li>
+        <li class="hidden">
+            Access to <b>750+ assignments and exams</b> with carefully prepared solutions
+            <br><img lass="hidden" src="images/math_book_stack.jpg">
+        </li>
+        <li class="hidden">
+            Cover <b>all topics of Maths</b> from the basic to the most advanced
+            <br><img src="images/math_topics.jpg">
+        </li>
+        <li class="hidden">
+            <b>Learn with leading experts in the field</b>
+            <br>who have assisted <b>numerous</b> in leveraging their mathematical competence.
+            <img src="images/math-experts.webp">
+        </li>
+        <li class="hidden">
+            Purcharse only once but <b>granted a life-time worth of education</b>
+        </li>
+    </ul>
+
+
+    <canvas class="hidden" id="sineWave" height="600px" width="600px">
+        &#8767; function example
+    </canvas>
+    <a class="buy">
+        <b>LEVEL UP YOUR MATH</b>
+    </a>
+    <!-- <canvas id="triangle" height="400px" width="400px">
+        Pytagone equation with a visual &#9722; example
+    </canvas> -->
+
+    <!-- <canvas id="circle" height="200px" width="200px">
+        The equation calculating the surface of a circle &#9675;
+    </canvas> -->
+    <div id="signUpForm">
+        <form>
+            <span class="close" title="Close">x</span>
+            <div class="formContainer">
+                <h2>SIGN UP FOR INFINITY MATH</h2>
+                <small><i>Only for 299.99$</i></small>
+                <h3>YOUR INFORMATION</h3>
+                <label for="regisName">Full name</label>
+                <br><input type="text" name="regisName" required placeholder="Nguyen Van A">
+                <br>
+                <label for="regisGender">Gender</label><br>
+                <input type="radio" id="maleChoice" name="regisGender" value="Male">
+                <label for="maleChoice">Male</label>
+                <br>
+                <input type="radio" id="femaleChoice" name="regisGender" value="Female">
+                <label for="femaleChoice">Female</label>
+                <br>
+                <input type="radio" id="otherChoice" name="regisGender" value="Other">
+                <label for="otherChoice">Other</label>
+                <br>
+                <label for="regisBdate">Date of birth</label><br><input type="date" name="regisBdate">
+                <br><label for="regisEmail">Email</label><br><input type="email" name="regisEmail"
+                    placeholder="someemail@gmail.com">
+                <br>
+                <label for="regisPhone">Phone number</label>
+                <br><input type="tel" pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}" placeholder="1234-567-890" name="regisPhone">
+                <br>
+                <label for="regisPayMethod">Payment</label>
+                <select id="regisPayMethod" name="regisPayMethod" required>
+                    <option value="paypal">Paypal</option>
+                    <option value="momo">Momo</option>
+                    <option value="banking">Banking</option>
+                </select>
+                <h3>YOUR ACCOUNT</h3>
+                <small><i>This account will be used to log into our course</i></small>
+                <br><label for="userName">Username</label><br><input type="text" name="userName" required
+                    placeholder="Username for your account">
+                <br><label for="userPsw1">Password</label><br><input type="password" name="userPsw1" required
+                    placeholder="Password for your account">
+                <button type="submit" name="submit">SUBMIT</button>
+            </div>
+
+        </form>
+    </div>
+    <div id="contactForm">
+        <form>
+            <span class="close" title="Close">x</span>
+            <h2>LEAVE US A MESSAGE</h2>
+            <label for="contactName">Name</label>
+            <input type="text" name="contactName">
+            <label for="contactEmail">Email</label>
+            <input type="email" name="contactEmail">
+            <label for="description">Subject</label>
+            <br>
+            <textarea name="description" placeholder="What you want to say"></textarea>
+            <button type="submit" name="submit">SUBMIT</button>
+        </form>
+    </div>
+
+    <nav id="contact">
+        <ul>
+            <li>
+                <b>CONTACT US</b>
+            </li>
+            <li>
+                Address: 123/345 Fake Streets, Ho Chi Minh City
+            </li>
+            <li>
+                <img src="images/face_icon_trans_bground.jpg"><a href="https://www.facebook.com/">Infinity Maths</a>
+            </li>
+            <li>
+                Tel: 0123-888-456
+            </li>
+            <li>
+                <button><b>LEAVE A MESSAGE</b></button>
+            </li>
+        </ul>
+    </nav>
+    <script defer src="script.js"></script>
+</body>
+
+</html>
