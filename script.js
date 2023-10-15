@@ -49,61 +49,6 @@ if (sineWaveCanvs) {
     // courseName.textContent += 'This browser doesn't support CANVAS';
 }
 
-const triangleCanvs = document.getElementById('triangle');
-if (triangleCanvs) {
-    const triCtx = triangleCanvs.getContext('2d');
-    const widthCanvas = triangleCanvs.width;
-    const heightCanvas = triangleCanvs.height;
-    const pointA = { x: widthCanvas / 8, y: 0 };
-    const pointB = { x: widthCanvas / 8, y: heightCanvas * 3 / 4 };
-    const pointC = { x: widthCanvas, y: heightCanvas * 3 / 4 };
-
-    triCtx.beginPath();
-    triCtx.lineStyle = 'white';
-    triCtx.moveTo(pointA.x, pointA.y);
-    triCtx.lineTo(pointB.x, pointB.y);
-    triCtx.lineTo(pointC.x, pointC.y);
-    triCtx.closePath();
-    triCtx.stroke();
-
-    triCtx.font = '2rem Times New Roman';
-    triCtx.fillText('a', widthCanvas * 0.03, heightCanvas / 3);
-    triCtx.fillText('b', widthCanvas / 2, heightCanvas * 73 / 100);
-    triCtx.fillText('c', 0.65 * widthCanvas, heightCanvas * 0.4);
-    triCtx.fillText('c  = a  + b', widthCanvas * 0.25, heightCanvas * 0.95);
-
-    triCtx.font = '1rem Times New Roman';
-    triCtx.fillText('2', widthCanvas * 0.29, heightCanvas * 0.9);
-    triCtx.fillText('2', widthCanvas * 0.43, heightCanvas * 0.9);
-    triCtx.fillText('2', widthCanvas * 0.57, heightCanvas * 0.9);
-} else {
-    // courseName = document.getElementById('courseName');
-    // courseName.textContent += 'This browser doesn't support CANVAS';
-}
-
-const circleCanv = document.getElementById('circle');
-if (circleCanv) {
-    const cirCtx = circleCanv.getContext('2d');
-    const widthCanvas = circleCanv.width;
-    const heightCanvas = circleCanv.height;
-    cirCtx.fillStyle = 'aquamarine';
-    cirCtx.lineStyle = 'aqua';
-    cirCtx.beginPath();
-
-    cirCtx.arc(widthCanvas / 2, heightCanvas / 2, widthCanvas / 2, 0, 2 * Math.PI);
-    cirCtx.stroke();
-    cirCtx.fill();
-} else {
-    // courseName = document.getElementById('courseName');
-    // courseName.textContent += 'This browser doesn't support CANVAS';
-}
-
-// const subBtn = document.getElementById('subBtn');
-// subBtn.onclick =
-//     () => setTimeout(() => {
-//         document.getElementById('type_inName').value = '';
-//         window.location.reload();
-//     }, 3000);
 const courseDescription = document.querySelector('.courseDescription ul');
 const delaySpeed = 50;
 const conclusion = document.querySelector('#conclusion');
