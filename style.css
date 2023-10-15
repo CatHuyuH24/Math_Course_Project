@@ -129,13 +129,13 @@ nav:first-child ul :active {
     color: yellow;
 }
 
-.courseDescription ul {
+.courseLeadingQues ul {
     position: relative;
     font-size: clamp(2rem, 3rem, 4rem);
     margin-top: 40vh;
 }
 
-.courseDescription ul {
+.courseLeadingQues ul {
     font-style: italic;
     list-style-type: none;
 }
