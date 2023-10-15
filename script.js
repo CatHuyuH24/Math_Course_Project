@@ -49,7 +49,7 @@ if (sineWaveCanvs) {
     // courseName.textContent += 'This browser doesn't support CANVAS';
 }
 
-const courseDescription = document.querySelector('.courseDescription ul');
+const courseLeadingQues = document.querySelector('.courseLeadingQues ul');
 const delaySpeed = 50;
 const conclusion = document.querySelector('#conclusion');
 let description = ['Do you want to',
@@ -59,7 +59,7 @@ let description = ['Do you want to',
 let characters = [];
 description.forEach(line => {
     const listItem = document.createElement('li');
-    courseDescription.appendChild(listItem);
+    courseLeadingQues.appendChild(listItem);
     line.split('').forEach((character, index) => {
         const _inside = document.createElement('span');
         _inside.textContent = character;
